@@ -1,0 +1,84 @@
+<!-- 
+                                                    COMANDO !important
+
+                                Faz com que seja prioridade, então se sobreponha ao próximo.
+
+
+                                                        POSITION
+
+- STATIC (padrão): Não aceita valores de top, bottom, left e right;
+- FIXED: Fixa o elemento na tela;
+- STICKY: Age como um adesivo, fixa o elemento só onde você determinar;
+- RELATIVE: Posição relativa a posição inicial dele;
+- ABSOLUTE: Posição absoluta(fixa) a algum elemento ou a página
+            - SE não tiver o elemento referência/ elemento referência 
+            for static -> posiciona referente a página.
+            - SE o elemento referência não for static -> posiciona referênte a ele.
+
+PROPRIEDADES:
+
+    - top;
+    - bottom;
+    - left;
+    - right.
+
+
+                                                    PSEUDO ELEMENTO
+
+    Quando há uma elemento sobre outro elemento, usa-se o "::" para especificar qual elemento está sendo configurado.
+HTML:
+ <input placeholder="Digite Aqui">
+ CSS:
+ input{
+    border: 1px solid red;
+    color: blue;
+}
+
+-> input::placeholder{
+    color: #ff1396;
+}
+
+p::first-letter{
+    color: purple;
+}
+
+
+                                                    PSEUDO CLASSES
+
+
+:active → quando o elemento está ativo, ou seja, está pressionado;
+:visited → seleciona o link que foi visitado;
+:hover → quando o mouse passa por cima do elemento;
+:checked → usado em radio, checkbox, select;
+:disabled → elemento desabilitado. Ex.: button/ input;
+:enabled → elemento está habilitado;
+:focus → é aplicada quando um elemento recebe foco, o que pode ocorrer quando um usuário seleciona um elemento
+:read-only → seleciona input ou textarea que são apenas leitura;
+:empty → elemento que não tem filho;
+
+:first-child → primeiro filho. Ex.: primeira "li" de uma "ul"/ primeiro "span" de uma "div";
+:first-of-type → primeiro elemento de seu tipo entre os filhos de seu elemento pai;
+:last-child → último filho;
+:last-of-type → último elemento de seu tipo entre os filhos de seu pai(elemento referência);
+:not() → estiliza os elementos, exceto o que está dentro do not();
+:nht-child() → seleciona o elemento baseado em sua posição. Ex.: :nht-child(3);
+:nht-last-child() → seleciona o elemento baseado em sua posição, contando de trás pra frente.
+
+
+                                    RESPONSIVIDAE
+
+Para o conteúdo se adaptar a tela. Ex.: do computador para o celular.
+
+-All: para todos os dispositivos;
+-Brailler: para dispositivos táteis;
+-Embassed: para dispositivos que imprimem em brailler;
+-Handheld: para dispositivos portáteis, geralmente com telas pequenas e banda limitada;
+-Print: para impressão em papel;
+-Projection: para apresentações com PPS;
+-Screen: para monitores ou dispositivos com telas coloridas e resolução adequada;
+-Speech: para sintetizadores de voz. As CSS2 tem uma especificação de CSS chamada Aural, 
+onde podemos formatar a voz dos sintetizadores.
+
+Orientação:
+portait: altura maior que largura;
+landscape: largura maior que altura.

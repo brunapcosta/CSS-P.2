@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+}
+
+a:active{
+     color: red;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+p:hover{
+    color: yellow;
+}

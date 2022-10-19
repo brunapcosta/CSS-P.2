@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li:first-child{
+    color: red;
+}
+
+li:last-child{
+    color: blue;
+}
+
+span:first-of-type{
+    color: red;
+}
+
+span:last-of-type{
+    color: yellow;
+}
+
+p:first-of-type{
+    color: green
+}
+
+p:last-of-type{
+    color: blueviolet;
+}

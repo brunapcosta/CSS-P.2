@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:checked{
+    width: 100px;
+    height: 100px;
+}
+
+.input1:focus{
+    border: 1px solid red;
+    outline: none;
+}
+
+.container{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.container:empty{
+    background: blue;
+    /*vai ficar azul se o elemento estiver vazio*/
+}
+
