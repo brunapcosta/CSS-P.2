@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+.container{
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+
+.container{
+    height: calc(100vh - 200px);
+    width: calc(50vw + 200px);
+    background: red;
+}
+*/
+
+.container{
+    height: calc(100vh - 200px);
+    width: calc((50vw + 200px) / 2);
+    background: red;
+}
